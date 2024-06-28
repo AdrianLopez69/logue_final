@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sesiones o sistema de login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            background-color: aqua;
+            overflow: hidden;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .navbar ul {
+            display: flex;
+            justify-content: right;
+            padding: 0;
+            margin: 0;
+        }
+
+        .navbar li {
+            margin: 0 15px;
+        }
+
+        .navbar a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            display: block;
+            transition: background-color 0.3s ease;
+        }
+
+        .navbar a:hover {
+            background-color: #007bff;
+        }
+
+        .navbar img {
+            height: 24px;
+            vertical-align: middle;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding-top: 60px;
+            height: calc(100vh - 60px);
+        }
+
+        .row-6 {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .col-6 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 10px; /* Espacio entre las columnas */
+        }
+
+        .card {
+            background: #fff;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .card img {
+            height: 70px; /* Tamaño pequeño para la imagen */
+            margin-bottom: 10px; /* Espacio entre la imagen y el botón */
+        }
+
+        .card button {
+            padding: 10px 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: #fff;
+            font-size: 12px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .card button:hover {
+            background-color: #0056b3;
+        }
+
+        .card h3 {
+            margin: 0;
+            font-size: 14px; /* Tamaño de fuente más pequeño para el texto del botón */
+        }
+    </style>
+</head>
+<body>
+
+<!-- Nav-bar -->
+<div class="navbar">
+    <ul>
+        <li><a href="/logueo_war_exploded/ServletLogin">Ingreso</a></li>
+    </ul>
+</div>
+
+<!-- Contenido principal -->
+<div class="content">
+    <div class="row-6">
+        <img src="imagenes/logo.jpg" alt="Logo" style="height: 200px; width: auto;">
+    </div>
+    <div class="row-6">
+        <div class="col-6">
+            <div class="card">
+                <a href="/logueo_war_exploded/productos">
+                    <button type="submit">
+                        <h3>Productos</h3>
+                    </button>
+                </a>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="card">
+                <a href="/logueo_war_exploded/ServletLogin">
+                    <button type="submit">
+                        <h3>Logueo</h3>
+                    </button>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
